@@ -17,27 +17,41 @@
  
 </head>
 <body>
-    <header id="header">
-        <nav class="navbar navbar-expand-lg bg-light">
-           <div class="container-fluid position-relative align-items-xl-stretch">
-            <div class="row">
-                <div class="col-4 d-md-none">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
-                <div class="col">
-                    <a href="index.html">
-                        <img src="./img/logo_dgt.svg" alt="Dirección general de Tráfico" id="logo">
-                    </a>
-                </div>
-                <div class="col ">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
-            </div>
-           </div>
-        </nav>
+    <header id="header">       
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">         
+           <a class="navbar-brand" href="index.html">
+             <img class="d-block" src="./img/logo_dgt.svg" alt="Dirección General de Tráfico" id="logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>      
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active " aria-current="page" href="#">Nuestros servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active " aria-current="page" href="#">Muévete con seguridad</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active " aria-current="page" href="#">Estado de tráfico</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active " aria-current="page" href="#">Conoce la DGT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active " aria-current="page" href="#">Comunicación</a>
+              </li>
+            </ul>
+          </div>
+      
+        </div>
+      </nav>
+        
     </header>
     
-    <div class="container-fluid" id="slider">
+    <div class="container-fluid gx-0" id="slider">
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -78,62 +92,69 @@
           </div>
     </div>
     <div class="container-fluid mt-5 mb-5" id="card-container">
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="card" id="tramites">
-                  <div class="card-body d-flex">
-                    <img src="./img/icono_sede.svg" class="card-img-left"  alt="accede a trámites">
-                    <div class="px-5">
-                        <h3 class="card-title fw-bold">Gestiona tus trámites en la Sede Electrónica</h3>
-                        <p class="card-text fw-semibold">¿Quieres pedir una cita previa para hacer tus trámites? ¿Necesitas pagar una multa? o ¿Quieres pagar tus tasas de tráfico?</p>
-                        <p class="card-text fw-semibold">Accede a la sede Electrónica y realiza los trámites de forma sencilla, desde el salón de tu casa.</p>
-                        <br>
-                        <a href="#" class="btn btn-primary text-center px-4 ">Accede a la Sede Electrónica</a>
-                    </div>
-                  </div>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="card" id="cifras">
-                  <div class="card-body">
-                    <div class="col-10 titulo-cifras text-end">
-                        <h5 class="card-title p-2 fw-bold">EL TRÁFICO EN CIFRAS 2022</h5>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-3 offset-md-1">
-                            <div>
-                                <p class="dato-1">93,4</p>
-                                <p class="dato-2 fw-semibold">millones de desplazamientos</p>
-                                <p class="dato-3">de largo recorrido por carretera durante el verano 2022. Un 4,65% mas que en 2019</p>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div>
-                                <p class="dato-1">225</p>
-                                <p class="dato-2 fw-semibold">personas fallecidas</p>
-                                <p class="dato-3">en siniestros viales (este verano)</p>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div>
-                                <p class="dato-1">791</p>
-                                <p class="dato-2 fw-semibold">heridos graves</p>
-                                <p class="dato-3">en siniestros viales (este verano)</p>
-                            </div>
+        <div class="row justify-content-center">
+          <div class="col-10">
+            <div class="row">
+              <div class="col-md-12 col-lg-6 mb-5">
+                  <div class="card" id="tramites">
+                    <div class="card-body d-md-flex">
+                      <img src="./img/icono_sede.svg" class="d-block mx-auto mb-3"  alt="accede a trámites">
+                      <div class="px-5">
+                          <h3 class="card-title fw-bold">Gestiona tus trámites en la Sede Electrónica</h3>
+                          <p class="card-text fw-semibold">¿Quieres pedir una cita previa para hacer tus trámites? ¿Necesitas pagar una multa? o ¿Quieres pagar tus tasas de tráfico?</p>
+                          <p class="card-text fw-semibold">Accede a la sede Electrónica y realiza los trámites de forma sencilla, desde el salón de tu casa.</p>
+                          <br>
+                          <div class="col-md-8 mx-auto col-auto">
+                            <button class="btn btn-primary " type="button">Accede a la Sede Electrónica</button>                         
+                          </div>
                         </div>
                     </div>
                   </div>
-                </div>
+              </div>
+              <div class="d-none d-md-block col-md-12 col-lg-6 ">
+                  <div class="card" id="cifras">
+                    <div class="card-body ps-0">
+                      <div class="col-12 titulo-cifras text-end">
+                          <h5 class="card-title p-2 fw-bold">EL TRÁFICO EN CIFRAS 2022</h5>
+                      </div>
+                      <div class="row justify-content-center">
+                          <div class="col-md-3 offset-md-1">
+                              <div>
+                                  <p class="dato-1">93,4</p>
+                                  <p class="dato-2 fw-semibold">millones de desplazamientos</p>
+                                  <p class="dato-3">de largo recorrido por carretera durante el verano 2022. Un 4,65% mas que en 2019</p>
+                              </div>
+                          </div>
+                          <div class="col-md-3">
+                              <div>
+                                  <p class="dato-1">225</p>
+                                  <p class="dato-2 fw-semibold">personas fallecidas</p>
+                                  <p class="dato-3">en siniestros viales (este verano)</p>
+                              </div>
+                          </div>
+                          <div class="col-md-3">
+                              <div>
+                                  <p class="dato-1">791</p>
+                                  <p class="dato-2 fw-semibold">heridos graves</p>
+                                  <p class="dato-3">en siniestros viales (este verano)</p>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+
             </div>
+          </div>
             
         </div>
     </div>
     <div class="container-fluid" id="dgt-footer">
       <div class="row">
-        <div class="col-4">
+        <div class="col-lg-4 col-sm-12 px-4 mt-3">
             <img src="img/logo-footer.jpg" alt="logo ministerio dgt" id="logo-footer">           
           <p>
-            <ul>
+            <ul class="px-0">
               <p class="subtitle-footer">Sobre la DGT</p>
               <li><a class="link-footer" href="#">Sede electronica de la DGT</a><br></li>
               <li><a class="link-footer" href="#">Revista Tráfico y seguridad vial</a></li>
@@ -144,10 +165,10 @@
             </ul>
           </p>
         </div>
-        <div class="col-4">
+        <div class="col-lg-4 px-4 col-sm-12 mt-3">
           <p class="subtitle-footer">A un clic</p>
           <p>
-            <ul>
+            <ul class="px-0">
               <li><a class="link-footer" href="#">Ministerio del Interior</a></li>
               <li><a class="link-footer" href="#">Datos abiertos del Gobierno de España</a></li>
               <li><a class="link-footer" href="#">Punto de acceso a las Administraciones Públicas</a></li>
@@ -157,7 +178,7 @@
             </ul>
           </p>
         </div>
-        <div class="col-4">
+        <div class="col-lg-4 px-4 col-sm-12 mt-3">
           <p class="subtitle-footer">Sobre la DGT</p>
           <p>
             <a class="link-data-footer" href="#">060</a>
