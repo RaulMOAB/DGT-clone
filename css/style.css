@@ -44,6 +44,7 @@ nav{
 
 
 #tramites, #cifras{
+    border:1px solid rgb(166, 166, 166);
     background-color: #e2e2e2;
 }
 
@@ -53,7 +54,7 @@ nav{
 }
 
 .dato-1{
-    font-size: 4.125rem;
+    font-size: 3rem;
     font-weight: 700;
 }
 
