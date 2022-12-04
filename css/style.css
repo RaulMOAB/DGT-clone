@@ -6,6 +6,9 @@
     box-sizing: border-box;
     font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+#header{
+    z-index: 99999;
+}
 
 body{
     font-size: 1rem;
@@ -29,6 +32,7 @@ body{
 }
 
 nav{
+    z-index: 100;
     height: 80px;
 }
 
@@ -65,7 +69,6 @@ nav{
 .dato-3{
     font-size: 0.6875rem;
 }
-
 /*FOOTER*/
 li{
     list-style: none;
