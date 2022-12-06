@@ -18,26 +18,49 @@
  
 </head>
 <body>
-    <header id="header">       
+    <header id="header">
       <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">         
-           <a class="navbar-brand" href="index.html">
-             <img class="d-block" src="./img/logo_dgt.svg" alt="Dirección General de Tráfico" id="logo">
+        <div class="container-fluid position-relative">
+          <a class="navbar-brand" href="index.html">
+            <img class="d-block " src="./img/logo_dgt.svg" alt="Dirección General de Tráfico" id="logo">
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>     
+          <button class="navbar-toggler position-absolute start-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active " aria-current="page" href="#">Nuestros servicios</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Nuestros servicios
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Multas y sanciones</a></li>
+                  <li><a class="dropdown-item" href="#">Permisos de conducir</a></li>
+                  <li><a class="dropdown-item" href="#">Vehículos</a></li>
+                </ul>
               </li>
-              <li class="nav-item">
-                <a class="nav-link active " aria-current="page" href="#">Muévete con seguridad</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Muévete con seguridad
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Vías más seguras</a></li>
+                  <li><a class="dropdown-item" href="#">Viaja seguro</a></li>
+                  <li><a class="dropdown-item" href="#">Consejos para conductores</a></li>
+                </ul>
               </li>
-              <li class="nav-item">
-                <a class="nav-link active " aria-current="page" href="#">Estado de tráfico</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Estado del tráfico
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Información e incidencias de tráfico</a></li>
+                  <li><a class="dropdown-item" href="#">Restricciones a la circulación</a></li>
+                  <li><a class="dropdown-item" href="#">Cámaras de tráfico</a></li>
+                </ul>
               </li>
+       
               <li class="nav-item">
                 <a class="nav-link active " aria-current="page" href="#">Conoce la DGT</a>
               </li>
@@ -46,10 +69,10 @@
               </li>
             </ul>
           </div>
-      
+    
         </div>
       </nav>
-        
+    
     </header>
     <div class="container-fluid gx-0" id="slider">
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">

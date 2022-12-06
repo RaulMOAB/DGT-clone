@@ -36,7 +36,9 @@ nav{
     height: 80px;
 }
 
-
+.dropdown-toggle::after{
+    content: none;
+}
 /* #slider{
     height: 785px;
 } */
